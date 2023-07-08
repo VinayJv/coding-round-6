@@ -83,7 +83,7 @@ img{
   border-radius: 5px;
 }
 .form-container{
-  max-width: 30%;
+  width: 18rem;
   position: absolute;
   left: 0; 
   right: 0; 

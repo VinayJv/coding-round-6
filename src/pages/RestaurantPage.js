@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import { useState } from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { useNavigate } from "react-router";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 export function RestaurantPage(){
     const { cuisinesData, filter, restaurantData } = useDataContext();
@@ -86,6 +87,9 @@ export function RestaurantPage(){
                 </label>
                 <button type="submit" className="submit-btn">Submit</button>
             </form>
+            <div style={{cursor: "pointer"}} onClick={()=>setShowForm(false)}>
+                <AiOutlineCloseCircle size={30}/>
+            </div>
         </div>
     </div>);
 }
